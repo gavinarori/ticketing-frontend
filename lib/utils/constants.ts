@@ -8,6 +8,7 @@ export const SEAT_SELECTION_LIMITS = {
 export const ROUTES = {
   home: "/",
   search: "/search",
+  events: "/events",
   login: "/login",
   register: "/register",
   event: (eventId: string) => `/events/${eventId}`,
