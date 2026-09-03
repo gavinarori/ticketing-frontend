@@ -25,7 +25,13 @@ export function useSeatSelection(layout: VenueLayout, eventId: string) {
 
   const holdMutation = useMutation({
     mutationFn: () => holdSeats(eventId, [...selectedSeatIds]),
-    onSuccess: (hold) => setHoldExpiry(new Date(hold.expiresAt).getTime()),
+    onSuccess: (hold) => {
+      setHoldExpiry(new Date(hold.expiresAt).getTime());
+      // Held seats now have a countdown ticking — move straight into
+      // checkout rather than leaving the fan on the seat map wondering
+      // what "held" got them.
+      router.push(ROUTES.checkout(eventId) as never);
+    },
   });
 
   /** Requires a signed-in fan — redirects to login with a return path rather than calling the API unauthenticated. */
