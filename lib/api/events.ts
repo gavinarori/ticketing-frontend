@@ -59,6 +59,7 @@ const MOCK_EVENTS: EventDetail[] = [
     priceFrom: 4500,
     currency: "GBP",
     hasSeatMap: true,
+    requiresWaitingRoom: true,
     description:
       "City host Liverpool in the first meeting between the two sides this season, with both clubs unbeaten through August.",
     broadcaster: "Sky Sports",
@@ -74,6 +75,7 @@ const MOCK_EVENTS: EventDetail[] = [
     priceFrom: 6500,
     currency: "GBP",
     hasSeatMap: true,
+    requiresWaitingRoom: false,
     description: "A group-stage rematch of two of the last decade's most frequent European ties.",
     broadcaster: "BT Sport",
   },
@@ -88,6 +90,7 @@ const MOCK_EVENTS: EventDetail[] = [
     priceFrom: 5000,
     currency: "GBP",
     hasSeatMap: true,
+    requiresWaitingRoom: false,
     description: "Two of the last three title challengers meet at the Etihad in November.",
   },
   {
@@ -101,6 +104,7 @@ const MOCK_EVENTS: EventDetail[] = [
     priceFrom: 4000,
     currency: "GBP",
     hasSeatMap: false,
+    requiresWaitingRoom: false,
     description: "A London derby to open the autumn fixture run.",
   },
   {
@@ -114,6 +118,7 @@ const MOCK_EVENTS: EventDetail[] = [
     priceFrom: 5500,
     currency: "GBP",
     hasSeatMap: false,
+    requiresWaitingRoom: false,
     description: "The oldest rivalry in English football returns to Anfield.",
   },
   {
@@ -127,6 +132,7 @@ const MOCK_EVENTS: EventDetail[] = [
     priceFrom: 4200,
     currency: "GBP",
     hasSeatMap: false,
+    requiresWaitingRoom: false,
     description: "Rescheduled pending confirmation from the Premier League.",
   },
 ];

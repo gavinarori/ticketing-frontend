@@ -27,7 +27,7 @@ export default async function SeatMapPage({ params }: PageProps) {
 
   return (
     <div className="h-[calc(100vh-64px)] w-full bg-[var(--color-night)] p-3">
-      <StadiumSeatMap layout={layout} eventId={event.id} />
+      <StadiumSeatMap layout={layout} eventId={event.id} requiresWaitingRoom={event.requiresWaitingRoom} />
     </div>
   );
 }
