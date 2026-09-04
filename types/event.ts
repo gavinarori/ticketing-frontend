@@ -20,6 +20,8 @@ export type EventSummary = {
   currency: string;
   /** Whether app/(fan)/events/[eventId]/seatmap has a real 3D layout wired up yet. */
   hasSeatMap: boolean;
+  /** High-demand fixtures route through /waiting-room before the seat map. */
+  requiresWaitingRoom: boolean;
 };
 
 export type EventDetail = EventSummary & {
